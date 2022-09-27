@@ -1,17 +1,30 @@
 .benefits__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+}
+
+.benefits__item {
+  max-width: 450px;
+
+  @media screen and(min-width:768px){
+  width: calc((100%-30px)/2)  
+  }
+  @media screen and(min-width:1200px) {
+  width: calc((100%-60px)/3)
+  }
 }
 
 .benefits__bgr {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: var(--team-background-color);
   margin-bottom: 30px;
   border-radius: 4px;
+
 }
 
 .benefits__icon {

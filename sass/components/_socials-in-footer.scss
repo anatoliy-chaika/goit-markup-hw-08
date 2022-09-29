@@ -1,4 +1,9 @@
+.join{
+    margin-bottom: 60px;
+}
+
 .join__title {
+    text-align: center;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -11,6 +16,7 @@
 .join__list {
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 
 .join__link {

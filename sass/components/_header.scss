@@ -15,6 +15,10 @@
 .site-nav {
   display: flex;
   align-items: center;
+
+  @media screen and(max-width:767px) {
+    display: none;
+  }
 }
 
 .site-nav__logo {
@@ -22,9 +26,14 @@
   color: var(--logo-color);
   font-family: var(--font-family-sacondary);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: calc(24 / 28);
   letter-spacing: 0.03em;
+
+  @media screen and(min-width:1200px) {
+    font-size: 26px;
+    line-height: calc(31 / 26);
+  }
 }
 
 .first-logo-cl {
@@ -76,7 +85,23 @@
 .contact {
   display: flex;
   margin-left: auto;
-  gap: 50px;
+  gap: 10px;
+
+    @media screen and(min-width:768px) and(max-width:1199px) {
+      flex-direction: column;
+      }
+
+  @media screen and(max-width:767px) {
+    display: none;
+  }
+
+
+
+  @media screen and(min-width:1200px) {
+    display: flex;
+    margin-left: auto;
+    gap: 50px;
+  }
 }
 
 .contact__link {

@@ -7,11 +7,11 @@
 .benefits__item {
   max-width: 450px;
 
-  @media screen and(min-width:768px){
-  width: 354px;  
+  @media screen and(min-width:768px) {
+    width: calc((100% - 30px) / 2);
   }
   @media screen and(min-width:1200px) {
-  width: 270px;
+    width: calc((100% - 90px) / 4);
   }
 }
 
@@ -24,7 +24,6 @@
   background-color: var(--team-background-color);
   margin-bottom: 30px;
   border-radius: 4px;
-
 }
 
 .benefits__icon {

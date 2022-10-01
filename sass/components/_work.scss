@@ -1,9 +1,8 @@
-
 .work {
   padding-top: 0;
 
   @media screen and (max-width: 1199px) {
-   display: none; 
+    display: none;
   }
 }
 
@@ -24,6 +23,7 @@
 
 .work__item {
   position: relative;
+  width: calc((100% - 60px) / 3);
 }
 
 .work__wrap {
